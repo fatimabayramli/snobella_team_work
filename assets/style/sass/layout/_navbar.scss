@@ -1,0 +1,23 @@
+.topbar{
+    .container{
+        width: 153rem;
+        height: 4.8rem;
+        background-color: #007878;
+        display: flex;
+        justify-content: space-between;
+        .phone{
+            display: flex;
+            img{
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+            p{
+                width: 9.8rem;
+                height: 2.4rem;
+            }  
+        }
+        ul{
+            display: flex;
+        }
+    }
+}
