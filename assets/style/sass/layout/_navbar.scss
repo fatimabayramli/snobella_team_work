@@ -1,23 +1,61 @@
 .topbar{
-    .container{
-        width: 153rem;
+    background-color: #007878;
+    .topbarContainer{
         height: 4.8rem;
-        background-color: #007878;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
         .phone{
             display: flex;
+            align-items: center;
+            gap: 12px;
+            p{
+                color: whitesmoke;
+            }
+        }
+        .help ul{
+            display: flex;
+            gap: 1.8rem;
+            color: whitesmoke;
+            a{
+                color: whitesmoke;
+            }
             img{
                 width: 2.4rem;
                 height: 2.4rem;
             }
-            p{
-                width: 9.8rem;
-                height: 2.4rem;
-            }  
         }
-        ul{
+    }
+}
+
+.navbar{
+    .navbarContainer{
+        height: max-content;
+        display: flex;
+        // align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .navbar_top{
+            justify-content: center;
+            align-items: center;
             display: flex;
+            gap: 15rem;
+            .search{
+                display: flex;
+                align-items: center;
+                border: 1px solid grey;
+                padding: 0.8rem;
+            }
+            .personal{
+                display: flex;
+                gap: 2.6rem;
+            }
+        }
+        .navbar_bottom{
+            display: flex;
+            .menu ul{
+                display: flex;
+            }
         }
     }
 }

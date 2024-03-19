@@ -11,25 +11,66 @@ html {
   border: 0;
   vertical-align: baseline;
 }
+* .container {
+  max-width: 112.8rem;
+  margin: auto;
+}
 
-.topbar .container {
-  width: 153rem;
-  height: 4.8rem;
+.topbar {
   background-color: #007878;
-  display: flex;
-  justify-content: space-between;
 }
-.topbar .container .phone {
+.topbar .topbarContainer {
+  height: 4.8rem;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.topbar .container .phone img {
+.topbar .topbarContainer .phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.topbar .topbarContainer .phone p {
+  color: whitesmoke;
+}
+.topbar .topbarContainer .help ul {
+  display: flex;
+  gap: 1.8rem;
+  color: whitesmoke;
+}
+.topbar .topbarContainer .help ul a {
+  color: whitesmoke;
+}
+.topbar .topbarContainer .help ul img {
   width: 2.4rem;
   height: 2.4rem;
 }
-.topbar .container .phone p {
-  width: 9.8rem;
-  height: 2.4rem;
+
+.navbar .navbarContainer {
+  height: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
-.topbar .container ul {
+.navbar .navbarContainer .navbar_top {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 15rem;
+}
+.navbar .navbarContainer .navbar_top .search {
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 0.8rem;
+}
+.navbar .navbarContainer .navbar_top .personal {
+  display: flex;
+  gap: 2.6rem;
+}
+.navbar .navbarContainer .navbar_bottom {
+  display: flex;
+}
+.navbar .navbarContainer .navbar_bottom .menu ul {
   display: flex;
 }/*# sourceMappingURL=main.css.map */
