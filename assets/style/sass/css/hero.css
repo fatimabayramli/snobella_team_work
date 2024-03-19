@@ -1,20 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-html * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  border: 0;
-  vertical-align: baseline;
-}
-html * .container {
-  max-width: 112.8rem;
-  margin: auto;
-}
-
 #hero {
   background-color: #FFE2E0;
   padding: 2.4rem 0 2.5rem 0;
