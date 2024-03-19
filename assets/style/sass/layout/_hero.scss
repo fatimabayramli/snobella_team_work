@@ -1,4 +1,5 @@
 #hero {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #FFE2E0;
   padding: 2.4rem 0 2.5rem 0;
 
@@ -6,11 +7,10 @@
 .heroContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .heroLeft {
-
-    max-width: 40rem;
-    max-height: 8rem;
+    max-width: 45.3rem;
     span {
       color: #DF4244;
       font-size: 2.4rem;
@@ -18,7 +18,7 @@
       line-height: 4.8rem;
     }
   
-    h2 {
+    .h2 {
       font-size: 4rem;
       font-weight: 700;
       line-height: 6.8rem;
@@ -26,7 +26,7 @@
     p {
       font-size: 1.6rem;
       font-weight: 400;
-      height: 2.72rem;
+      line-height: 2.72rem;
       color: #212121d1;
     }
   
@@ -37,8 +37,44 @@
       padding: 1.2rem 5.7rem;
       margin: 4.8rem 0 12.8rem 0;
     }
+
+    .ellipse {
+      margin: 0 1.7rem;
+    }
+  }
+
+  .heroRight {
+    max-width: 64.2rem
+  }
+
+  .heroRight img {
+    width: 100%;
   }
 
 }
   
+}
+
+@media screen and (max-width: 992px) {
+
+  .container {
+    
+  }
+
+  #hero {
+    background-image: url('../../../images/7771326b48a2887aa224f1621090d07b\ 1.svg');
+
+    .heroRight {
+      display: none;
+    }
+  
+  }
+
+}
+
+@media screen and (max-width: 1222px) {
+
+  .heroContainer {
+    padding-left: 6%;
+  }
 }

@@ -1,0 +1,30 @@
+#footer {
+  background-color: #F7F7F9;
+
+  .footerTop {
+    border-bottom: 1px solid #9e9e9ee6;
+
+    .footerContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .h2 {
+        font-size: 4rem;
+      }
+
+      form {
+        width: 50.4rem;
+        border: 1px solid red;
+      }
+
+      input {
+        // border: 1px solid red;
+        // width: 100%;
+        // padding: 1.5rem;
+      }
+    }
+  } 
+
+
+
+}
