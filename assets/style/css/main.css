@@ -17,10 +17,7 @@ html {
   margin: auto;
 }
 
-#Feproducts {
-  min-height: 102.8rem;
-}
-#Feproducts .top {
+#Featured .top {
   position: relative;
   padding-top: 8rem;
   display: grid;
@@ -28,22 +25,22 @@ html {
   gap: 2.4rem;
   position: relative;
 }
-#Feproducts .top .productBox {
+#Featured .top .productBox {
   position: relative;
   height: 16.2rem;
   background-color: #F5F5F5;
   border-radius: 0.8rem;
   padding: 2.4rem 10.5rem 10.7rem 2.4rem;
 }
-#Feproducts .top .productBox h3 {
+#Featured .top .productBox h3 {
   font-size: 1.8rem;
 }
-#Feproducts .top .productBox img {
+#Featured .top .productBox img {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-#Feproducts .top .ball {
+#Featured .top .ball {
   border: 1px solid #EBEBEB;
   background-color: white;
   position: absolute;
@@ -57,31 +54,34 @@ html {
   top: 50%;
   transform: translate(50%, 50%);
 }
-#Feproducts .content {
-  margin-top: 9.6rem;
+
+.product {
+  padding: 9.6rem 0;
+}
+.product .content {
   display: flex;
   justify-content: space-between;
 }
-#Feproducts .content h2 {
+.product .content h2 {
   font-size: 3.2rem;
 }
-#Feproducts .content .link {
+.product .content .link {
   display: flex;
   align-items: center;
   gap: 1.633rem;
 }
-#Feproducts .content .link a {
+.product .content .link a {
   font-size: 1.6rem;
   font-weight: 400;
 }
-#Feproducts .feature {
+.product .posts {
   position: relative;
   margin-top: 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2.4rem;
 }
-#Feproducts .feature .post {
+.product .posts .post {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -91,31 +91,31 @@ html {
   background-color: #F9F9F9;
   border-radius: 0.8rem;
 }
-#Feproducts .feature .post img {
+.product .posts .post img {
   align-self: center;
 }
-#Feproducts .feature .post h3 {
+.product .posts .post h3 {
   font-size: 1.6rem;
   line-height: 2.72rem;
 }
-#Feproducts .feature .post .stars {
+.product .posts .post .stars {
   margin-top: 1.6rem;
   display: flex;
   gap: 1.183rem;
 }
-#Feproducts .feature .post .price {
+.product .posts .post .price {
   display: flex;
   align-items: center;
   gap: 1.8rem;
   font-size: 1.6rem;
   color: rgba(54, 54, 54, 0.7490196078);
 }
-#Feproducts .feature .post .price .red {
+.product .posts .post .price .red {
   font-size: 2rem;
   color: #F75145;
   font-weight: 600;
 }
-#Feproducts .feature .post button {
+.product .posts .post button {
   font-size: 1.6rem;
   font-weight: 500;
   width: 100%;
@@ -124,7 +124,7 @@ html {
   border: 1px solid #212121;
   border-radius: 0.8rem;
 }
-#Feproducts .feature .post .new {
+.product .posts .post .new {
   position: absolute;
   top: 1.6rem;
   left: 1.6rem;
@@ -134,7 +134,7 @@ html {
   background-color: #43D167;
   border-radius: 0.8rem;
 }
-#Feproducts .feature .post .disc {
+.product .posts .post .disc {
   position: absolute;
   top: 1.6rem;
   left: 1.6rem;
@@ -144,12 +144,12 @@ html {
   background-color: #DF4244;
   border-radius: 0.8rem;
 }
-#Feproducts .feature .post .like {
+.product .posts .post .like {
   position: absolute;
   top: 1.6rem;
   right: 1.6rem;
 }
-#Feproducts .feature .rightBall {
+.product .posts .rightBall {
   border: 1px solid #EBEBEB;
   background-color: white;
   position: absolute;
@@ -163,7 +163,7 @@ html {
   top: 50%;
   transform: translateX(50%);
 }
-#Feproducts .feature .leftBall {
+.product .posts .leftBall {
   border: 1px solid #EBEBEB;
   background-color: white;
   position: absolute;
@@ -179,137 +179,39 @@ html {
 }
 
 #BestSeller {
-  min-height: 73.8rem;
   background-color: #FFF7F7;
 }
-#BestSeller .container {
-  padding-top: 7.2rem;
+#BestSeller .product {
+  padding: 7.2rem 0;
 }
-#BestSeller .container .content {
-  display: flex;
-  justify-content: space-between;
+#BestSeller .product .post {
+  background-color: #ffffff;
 }
-#BestSeller .container .content h2 {
-  font-size: 3.2rem;
-}
-#BestSeller .container .content .link {
-  display: flex;
-  align-items: center;
-  gap: 1.633rem;
-}
-#BestSeller .container .content .link a {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-#BestSeller .container .feature {
-  position: relative;
-  margin-top: 3.2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.4rem;
-}
-#BestSeller .container .feature .post {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1.1rem 3.4rem 2.8rem 2.4rem;
-  height: 50.8rem;
-  background-color: #F9F9F9;
-  border-radius: 0.8rem;
-}
-#BestSeller .container .feature .post img {
-  align-self: center;
-}
-#BestSeller .container .feature .post h3 {
-  font-size: 1.6rem;
-  line-height: 2.72rem;
-}
-#BestSeller .container .feature .post .stars {
-  margin-top: 1.6rem;
-  display: flex;
-  gap: 1.183rem;
-}
-#BestSeller .container .feature .post .price {
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
-  font-size: 1.6rem;
-  color: rgba(54, 54, 54, 0.7490196078);
-}
-#BestSeller .container .feature .post .price .red {
-  font-size: 2rem;
-  color: #F75145;
-  font-weight: 600;
-}
-#BestSeller .container .feature .post button {
-  font-size: 1.6rem;
-  font-weight: 500;
-  width: 100%;
-  height: 4.8rem;
-  background-color: rgba(54, 54, 54, 0);
-  border: 1px solid #212121;
-  border-radius: 0.8rem;
-}
-#BestSeller .container .feature .post .new {
-  position: absolute;
-  top: 1.6rem;
-  left: 1.6rem;
-  font-size: 1.6rem;
-  color: white;
-  padding: 3px 22px;
-  background-color: #43D167;
-  border-radius: 0.8rem;
-}
-#BestSeller .container .feature .post .disc {
-  position: absolute;
-  top: 1.6rem;
-  left: 1.6rem;
-  font-size: 1.6rem;
-  color: white;
-  padding: 3px 22px;
-  background-color: #DF4244;
-  border-radius: 0.8rem;
-}
-#BestSeller .container .feature .post .like {
-  position: absolute;
-  top: 1.6rem;
-  right: 1.6rem;
-}
-#BestSeller .container .feature .rightBall {
-  border: 1px solid #EBEBEB;
-  background-color: white;
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  right: 0;
-  top: 50%;
-  transform: translateX(50%);
-}
-#BestSeller .container .feature .leftBall {
-  border: 1px solid #EBEBEB;
-  background-color: white;
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  top: 50%;
-  left: 0;
-  transform: translateX(-50%) rotate(180deg);
+
+#discount .product {
+  padding-bottom: 12.8rem;
 }
 
 @media screen and (max-width: 992px) {
-  #Feproducts .container {
-    padding: 3rem;
-  }
-  #Feproducts .container .top {
+  #Featured .top {
+    gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
+    padding: 8rem;
+    padding-bottom: 0;
+  }
+  #Featured .top .ball {
+    right: 5%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .product {
+    padding: 9.6rem;
+  }
+  .product .posts {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  #BestSeller .product {
+    padding: 7.2rem 9.6rem;
   }
 }/*# sourceMappingURL=main.css.map */
