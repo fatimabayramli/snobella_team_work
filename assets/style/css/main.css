@@ -15,8 +15,11 @@ html * .container {
   margin: auto;
 }
 
+@font-face {
+  font-family: "palanquin";
+  src: url("./../../../fonts/poppins/Poppins-Italic.ttf");
+}
 #hero {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #FFE2E0;
   padding: 2.4rem 0 2.5rem 0;
 }
@@ -51,6 +54,14 @@ html * .container {
   border-radius: 0.8rem;
   padding: 1.2rem 5.7rem;
   margin: 4.8rem 0 12.8rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#hero .heroContainer .heroLeft button:hover {
+  background-color: transparent;
+  color: #206363;
+  font-weight: 700;
+  border: 0.1rem solid #206363;
 }
 #hero .heroContainer .heroLeft .ellipse {
   margin: 0 1.7rem;
@@ -63,14 +74,11 @@ html * .container {
 }
 
 @media screen and (max-width: 992px) {
-  #hero {
-    background-image: url("../../../images/7771326b48a2887aa224f1621090d07b 1.svg");
-  }
-  #hero .heroRight {
-    display: none;
+  .heroContainer {
+    flex-direction: column;
   }
 }
-@media screen and (max-width: 1222px) {
+@media (min-width: 992px) and (max-width: 1400px) {
   .heroContainer {
     padding-left: 6%;
   }
@@ -79,7 +87,8 @@ html * .container {
   background-color: #F7F7F9;
 }
 #footer .footerTop {
-  border-bottom: 1px solid rgba(158, 158, 158, 0.9019607843);
+  border-bottom: 0.1rem solid rgba(39, 49, 66, 0.095);
+  padding: 3.5rem 0 3.2rem 0;
 }
 #footer .footerTop .footerContainer {
   display: flex;
@@ -89,6 +98,118 @@ html * .container {
   font-size: 4rem;
 }
 #footer .footerTop .footerContainer form {
-  width: 50.4rem;
-  border: 1px solid red;
+  position: relative;
 }
+#footer .footerTop .footerContainer form input {
+  width: 50.4rem;
+  border: 0.1rem solid rgba(158, 158, 158, 0.662745098);
+  border-radius: 0.8rem;
+  padding: 1.5rem 1.6rem;
+}
+#footer .footerTop .footerContainer form .search {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 20%;
+}
+#footer .footerMain {
+  background-color: #F7F7F9;
+  padding: 5.1rem;
+}
+#footer .footerMain .footerMainContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-areas: "contact shop company help";
+}
+#footer .footerMain .footerMainContainer .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#footer .footerMain .footerMainContainer .main h4 a {
+  color: #212121;
+  font-size: 1.8rem;
+}
+#footer .footerMain .footerMainContainer li {
+  margin-top: 2rem;
+}
+#footer .footerMain .footerMainContainer p, #footer .footerMain .footerMainContainer .main a {
+  font-size: 1.6rem;
+  color: rgba(33, 33, 33, 0.7764705882);
+}
+#footer .footerMain .footerMainContainer .contact {
+  grid-area: contact;
+}
+#footer .footerMain .footerMainContainer .contact .paragraph {
+  line-height: 2.72rem;
+}
+#footer .footerMain .footerMainContainer .contact .email {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0 2.4rem 0;
+}
+#footer .footerMain .footerMainContainer .contact .phone {
+  display: flex;
+  align-items: center;
+}
+#footer .footerMain .footerMainContainer .contact input {
+  background-color: transparent;
+  margin-left: 1rem;
+}
+#footer .footerMain .footerMainContainer .contact button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0.1rem solid rgba(158, 158, 158, 0.662745098);
+  border-radius: 0.8rem;
+  padding: 1rem 1.6rem;
+  margin: 4.8rem 0 2.9rem 0;
+  cursor: pointer;
+}
+#footer .footerMain .footerMainContainer .contact button img {
+  margin-right: 0.8rem;
+}
+#footer .footerMain .footerMainContainer .shop {
+  grid-area: shop;
+}
+#footer .footerMain .footerMainContainer .company {
+  grid-area: company;
+}
+#footer .footerMain .footerMainContainer .help {
+  grid-area: help;
+}
+#footer .footerBottom {
+  padding: 2.3rem;
+  background-color: white;
+}
+#footer .footerBottom .footerBottomContainer {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footerBottom .footerBottomContainer .paragraph {
+  font-size: 1.6rem;
+  color: rgba(33, 33, 33, 0.7764705882);
+}
+#footer .footerBottom .footerBottomContainer .footerSocial img {
+  padding-left: 3.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .footerMainContainer {
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-areas: "contact" "shop" "company" "help";
+  }
+  .footerContainer, .footerBottomContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .footerMainContainer {
+    grid-template-columns: repeat(1, 3fr);
+    grid-template-areas: "contact" "shop" "company" "help";
+  }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .footerContainer, .footerBottomContainer {
+    padding-left: 6%;
+  }
+}/*# sourceMappingURL=main.css.map */

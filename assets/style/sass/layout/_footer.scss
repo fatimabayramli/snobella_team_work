@@ -1,8 +1,8 @@
 #footer {
   background-color: #F7F7F9;
-
   .footerTop {
-    border-bottom: 1px solid #9e9e9ee6;
+    border-bottom: 0.1rem solid rgba(39, 49, 66, 0.095);
+    padding: 3.5rem 0 3.2rem 0;
 
     .footerContainer {
       display: flex;
@@ -10,21 +10,163 @@
 
       .h2 {
         font-size: 4rem;
+        // font-family: "palanquin";
       }
 
       form {
-        width: 50.4rem;
-        border: 1px solid red;
+        position: relative;
+
+        input {
+          width: 50.4rem;
+          border: 0.1rem solid #9e9e9ea9;
+          border-radius: 0.8rem;
+          padding: 1.5rem 1.6rem;
+        }
+
+        .search {
+          position: absolute;
+          right: 1.2rem;
+          bottom: 20%;
+        }
       }
 
-      input {
-        // border: 1px solid red;
-        // width: 100%;
-        // padding: 1.5rem;
-      }
     }
   } 
 
+  .footerMain {
+    background-color: #F7F7F9;
+    padding: 5.1rem;
+
+    .footerMainContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      grid-template-areas: "contact shop company help";
 
 
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        h4 a {
+          color: #212121;
+          font-size: 1.8rem;
+        }
+      }
+
+      li {
+        margin-top: 2rem;
+      }
+
+      p, .main a {
+        font-size: 1.6rem;
+        color: #212121c6;
+      }
+
+      .contact {
+        grid-area: contact;
+
+        .paragraph {
+          line-height: 2.72rem;
+        }
+
+        .email {
+          display: flex;
+          align-items: center;
+          margin: 4rem 0 2.4rem 0;
+        }
+
+        .phone {
+          display: flex;
+          align-items: center;
+        }
+
+        input {
+          background-color: transparent;
+          margin-left: 1rem;
+        }
+
+
+        button {
+          display: flex;
+          align-items: center;
+          background-color: transparent;
+          border: 0.1rem solid #9e9e9ea9;
+          border-radius: 0.8rem;
+          padding: 1rem 1.6rem;
+          margin: 4.8rem 0 2.9rem 0;
+          cursor: pointer;
+
+          img {
+            margin-right: 0.8rem;
+          }
+        }
+      }
+
+      .shop {
+        grid-area: shop;
+      }
+
+      .company {
+        grid-area: company;
+      }
+
+      .help {
+        grid-area: help;
+      }
+    }
+  }
+
+  .footerBottom {
+    padding: 2.3rem;
+    background-color: white;
+
+    .footerBottomContainer {
+      display: flex;
+      justify-content: space-between;
+  
+      .paragraph {
+        font-size: 1.6rem;
+        color: #212121c6;
+      }
+  
+      .footerSocial {
+  
+        img {
+          padding-left: 3.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .footerMainContainer {
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-areas: "contact" "shop"
+    "company" "help";
+  }
+
+  .footerContainer, .footerBottomContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .footerMainContainer {
+    grid-template-columns: repeat(1, 3fr);
+    grid-template-areas: "contact"
+    "shop"
+    "company"
+    "help";
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+
+  .footerContainer, .footerBottomContainer {
+    padding-left: 6%;
+  }
 }

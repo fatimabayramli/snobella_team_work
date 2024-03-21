@@ -1,5 +1,4 @@
 #hero {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #FFE2E0;
   padding: 2.4rem 0 2.5rem 0;
 
@@ -36,6 +35,15 @@
       border-radius: 0.8rem;
       padding: 1.2rem 5.7rem;
       margin: 4.8rem 0 12.8rem 0;
+      cursor: pointer;
+      transition: .5s;
+    }
+
+    button:hover {
+      background-color: transparent;
+      color: #206363;
+      font-weight: 700;
+      border: 0.1rem solid #206363;
     }
 
     .ellipse {
@@ -56,23 +64,14 @@
 }
 
 @media screen and (max-width: 992px) {
-
-  .container {
-    
-  }
-
-  #hero {
-    background-image: url('../../../images/7771326b48a2887aa224f1621090d07b\ 1.svg');
-
-    .heroRight {
-      display: none;
+    .heroContainer {
+      flex-direction: column;
     }
   
   }
 
-}
 
-@media screen and (max-width: 1222px) {
+@media (min-width: 992px) and (max-width: 1400px) {
 
   .heroContainer {
     padding-left: 6%;
