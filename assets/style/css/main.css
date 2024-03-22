@@ -212,4 +212,162 @@ html * .container {
   .footerContainer, .footerBottomContainer {
     padding-left: 6%;
   }
+}
+#shopBag {
+  padding-top: 3.2rem;
+}
+#shopBag .shopBagContainer .shopBagTop {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+#shopBag .shopBagContainer .shopBagTop p {
+  font-size: 1.4rem;
+  line-height: 2.38rem;
+  color: #1D1D1D;
+}
+#shopBag .shopBagContainer .h2 {
+  font-size: 4rem;
+  line-height: 6.8rem;
+  margin: 0.6rem 0 4.8rem 0;
+  color: #212121;
+}
+#shopBag .shopBagContainer .shopBagMiddle {
+  display: flex;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard {
+  display: flex;
+  padding: 1.6rem 1.7rem;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.8rem;
+  width: 70rem;
+  position: relative;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardImage {
+  background-color: #F9F9F9;
+  padding: 2.3rem 1.4rem 1.9rem 1.3rem;
+  border-radius: 0.8rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardMain {
+  margin-left: 2.5rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardMain h5 {
+  font-size: 1.6rem;
+  line-height: 2.72rem;
+  color: #212121;
+  margin-bottom: 1.2rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardMain p {
+  font-size: 1.4rem;
+  line-height: 2.38rem;
+  color: #212121;
+  opacity: 75%;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardMain select {
+  padding: 0.6rem 1.2rem 0.6rem 0.8rem;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide h3 {
+  font-size: 1.8rem;
+  line-height: 3.06rem;
+  color: #212121;
+  position: absolute;
+  right: 1.7rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons {
+  display: flex;
+  gap: 4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .icon {
+  position: absolute;
+  bottom: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .icon p {
+  font-size: 1.4rem;
+  line-height: 2.38rem;
+  color: #212121;
+  opacity: 75%;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .icon .red {
+  color: #DF4244;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .like {
+  right: 14rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .remove {
+  right: 1.7rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide {
+  margin-left: 2.4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount {
+  background-color: #F9F9F9;
+  border-radius: 0.8rem;
+  padding: 3.2rem 2.4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .discountTop {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #E4E4E4;
+  padding-bottom: 2.4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .discountTop p {
+  font-size: 1.6rem;
+  line-height: 2.72rem;
+  color: #212121;
+  margin-bottom: 1.2rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .discountTop h3 {
+  font-size: 1.8rem;
+  line-height: 3.06rem;
+  margin-top: 0.8rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .apply {
+  margin-top: 2.2rem;
+  background-color: transparent;
+  border: 1px solid #DBDBDB;
+  border-radius: 0.8rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .apply input {
+  background-color: transparent;
+  padding-left: 1.5rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .apply button {
+  background-color: #FF695E;
+  border: 1px solid #FF695E;
+  border-radius: 0 0.8rem 0.8rem 0;
+  font-size: 1.6rem;
+  padding: 1rem 2.8rem;
+  color: white;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 2.3rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .buttons button {
+  border-radius: 0.8rem;
+  padding: 1.3rem 0;
+  border: 1px solid;
+  font-size: 1.6rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .buttons .btnRed {
+  background-color: #DF4244;
+  border-color: #DF4244;
+  color: white;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .buttons .btnGray {
+  background-color: transparent;
+  border-color: #212121;
+  color: #212121;
 }/*# sourceMappingURL=main.css.map */
