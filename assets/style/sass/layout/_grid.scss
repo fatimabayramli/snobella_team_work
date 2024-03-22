@@ -13,6 +13,8 @@
       border-radius: 0.8rem;
       padding: 2.4rem 10.5rem 10.7rem 2.4rem;
       h3{
+        font-family: "poppins",sans-serif;
+        font-weight: 500;
         font-size: 1.8rem;
 
       }
@@ -48,6 +50,7 @@
         display: flex;
         justify-content: space-between;
         h2{
+         
           font-size: 3.2rem;
         }
         .link{
@@ -55,6 +58,7 @@
           align-items: center;
           gap: 1.633rem;
           a{
+            font-family: "poppins",sans-serif;
             font-size: 1.6rem;
             font-weight: 400;
           }
@@ -79,6 +83,7 @@
               align-self: center;
             }
             h3{
+              font-weight: 500;
               font-size: 1.6rem;
               line-height: 2.72rem;
             }
@@ -100,6 +105,7 @@
               }
             }
             button{
+              font-family: "poppins",sans-serif;
               font-size: 1.6rem;
               font-weight: 500;
               width: 100%;
