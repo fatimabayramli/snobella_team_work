@@ -5,7 +5,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: max-content;
+        width: 100%;
         gap: 40rem;
         .phone{
             display: flex;
@@ -34,9 +34,9 @@
     border-bottom : 1px solid rgba(128, 128, 128, 0.623);
     .navbarContainer{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-direction: column;
-        width: max-content;
+        width: 100%;
         padding: 1.5rem 0;
         gap: 2rem;
         .navbar_top{

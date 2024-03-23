@@ -24,8 +24,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   gap: 40rem;
 }
 .topbar .topbarContainer .phone {
@@ -54,10 +53,9 @@ html {
 }
 .navbar .navbarContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   padding: 1.5rem 0;
   gap: 2rem;
 }
