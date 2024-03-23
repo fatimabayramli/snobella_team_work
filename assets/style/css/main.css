@@ -245,20 +245,20 @@ main .content {
   flex-direction: column;
   gap: 0.6rem;
 }
-main .link {
+main .content .link {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
-main .link a {
+main .content .link a {
   font-family: "poppins", sans-serif;
   font-size: 1.4rem;
   color: rgba(29, 29, 29, 0.7490196078);
 }
-main .link .bold {
+main .content .link .bold {
   color: #1D1D1D;
 }
-main h2 {
+main .content h2 {
   margin-top: 0.6rem;
   font-size: 4rem;
   font-weight: 600;
@@ -896,5 +896,63 @@ main .container .bottom .about .line {
     height: 0;
     width: 70%;
     align-self: center;
+  }
+}
+hr {
+  border: 1px solid rgba(39, 49, 66, 0.1490196078);
+}
+
+main {
+  padding: 3.2rem 0 12.8rem 0;
+}
+main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main .content .link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+main .content .link a {
+  font-family: "poppins", sans-serif;
+  font-size: 1.4rem;
+  color: rgba(29, 29, 29, 0.7490196078);
+}
+main .content .link .bold {
+  color: #1D1D1D;
+}
+main .content h2 {
+  margin-top: 0.6rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+main .favorite {
+  margin-top: 3.2rem;
+  width: 100%;
+  display: flex;
+  gap: 9.7rem;
+}
+main .favorite .posts {
+  gap: 4.7rem 4.8rem;
+}
+main .favorite .posts .post .close {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 992px) {
+  main .favorite .posts {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */
