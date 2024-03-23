@@ -24,11 +24,14 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 40rem;
 }
 .topbar .topbarContainer .phone {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1.2rem;
 }
 .topbar .topbarContainer .phone p {
   color: whitesmoke;
@@ -46,31 +49,46 @@ html {
   height: 2.4rem;
 }
 
+.navbar {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.623);
+}
 .navbar .navbarContainer {
-  height: max-content;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1.5rem 0;
+  gap: 2rem;
 }
 .navbar .navbarContainer .navbar_top {
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 15rem;
+  gap: 10rem;
 }
 .navbar .navbarContainer .navbar_top .search {
   display: flex;
   align-items: center;
-  border: 1px solid grey;
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
   padding: 0.8rem;
 }
 .navbar .navbarContainer .navbar_top .personal {
   display: flex;
   gap: 2.6rem;
 }
+.navbar .navbarContainer .navbar_top .personal .sign {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .navbar .navbarContainer .navbar_bottom {
   display: flex;
+  justify-content: left;
+  font-size: larger;
 }
-.navbar .navbarContainer .navbar_bottom .menu ul {
+.navbar .navbarContainer .navbar_bottom ul {
   display: flex;
+  gap: 5.4rem;
 }/*# sourceMappingURL=main.css.map */

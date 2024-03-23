@@ -5,10 +5,12 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        width: max-content;
+        gap: 40rem;
         .phone{
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 1.2rem;
             p{
                 color: whitesmoke;
             }
@@ -29,33 +31,45 @@
 }
 
 .navbar{
+    border-bottom : 1px solid rgba(128, 128, 128, 0.623);
     .navbarContainer{
-        height: max-content;
         display: flex;
-        // align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
+        width: max-content;
+        padding: 1.5rem 0;
+        gap: 2rem;
         .navbar_top{
             justify-content: center;
             align-items: center;
             display: flex;
-            gap: 15rem;
+            gap: 10rem;
             .search{
                 display: flex;
                 align-items: center;
-                border: 1px solid grey;
+                border: 0.1rem solid grey;
+                border-radius: 0.5rem;
                 padding: 0.8rem;
             }
             .personal{
                 display: flex;
                 gap: 2.6rem;
+                .sign{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
             }
         }
         .navbar_bottom{
             display: flex;
-            .menu ul{
+            justify-content: left;
+            font-size: larger;
+            ul{
                 display: flex;
+                gap: 5.4rem;
             }
         }
+    
     }
 }
