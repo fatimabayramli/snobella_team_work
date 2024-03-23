@@ -17,11 +17,20 @@ html * .container {
 
 @font-face {
   font-family: "palanquin";
-  src: url("./../../../fonts/poppins/Poppins-Italic.ttf");
+  src: url("../../../../assets/fonts/palanquin/Palanquin-SemiBold.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../../../../assets/fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "rubik";
+  src: url("../../../../assets/fonts/rubik/Rubik-SemiBold.ttf");
 }
 #hero {
   background-color: #FFE2E0;
   padding: 2.4rem 0 2.5rem 0;
+  width: 100%;
 }
 #hero .heroContainer {
   display: flex;
@@ -36,21 +45,26 @@ html * .container {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 4.8rem;
+  font-family: "rubik";
 }
 #hero .heroContainer .heroLeft .h2 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 6.8rem;
+  font-family: "palanquin";
 }
 #hero .heroContainer .heroLeft p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.72rem;
   color: rgba(33, 33, 33, 0.8196078431);
+  font-family: "poppins";
 }
 #hero .heroContainer .heroLeft button {
   background-color: #206363;
   color: white;
+  font-family: "poppins";
+  font-size: 1.6rem;
   border-radius: 0.8rem;
   padding: 1.2rem 5.7rem;
   margin: 4.8rem 0 12.8rem 0;
@@ -86,6 +100,11 @@ html * .container {
 #footer {
   background-color: #F7F7F9;
 }
+#footer p, #footer .main a {
+  font-size: 1.6rem;
+  color: rgba(33, 33, 33, 0.7764705882);
+  font-family: "poppins";
+}
 #footer .footerTop {
   border-bottom: 0.1rem solid rgba(39, 49, 66, 0.095);
   padding: 3.5rem 0 3.2rem 0;
@@ -96,6 +115,7 @@ html * .container {
 }
 #footer .footerTop .footerContainer .h2 {
   font-size: 4rem;
+  font-family: "palanquin";
 }
 #footer .footerTop .footerContainer form {
   position: relative;
@@ -109,35 +129,26 @@ html * .container {
 #footer .footerTop .footerContainer form .search {
   position: absolute;
   right: 1.2rem;
-  bottom: 20%;
+  bottom: 3.5rem;
 }
 #footer .footerMain {
   background-color: #F7F7F9;
   padding: 5.1rem;
 }
 #footer .footerMain .footerMainContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  grid-template-areas: "contact shop company help";
-}
-#footer .footerMain .footerMainContainer .main {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-between;
 }
-#footer .footerMain .footerMainContainer .main h4 a {
+#footer .footerMain .footerMainContainer .main ul h4 a {
   color: #212121;
   font-size: 1.8rem;
+  font-family: "rubik";
 }
-#footer .footerMain .footerMainContainer li {
+#footer .footerMain .footerMainContainer .main ul li {
   margin-top: 2rem;
 }
-#footer .footerMain .footerMainContainer p, #footer .footerMain .footerMainContainer .main a {
-  font-size: 1.6rem;
-  color: rgba(33, 33, 33, 0.7764705882);
-}
 #footer .footerMain .footerMainContainer .contact {
-  grid-area: contact;
+  max-width: 32.6rem;
 }
 #footer .footerMain .footerMainContainer .contact .paragraph {
   line-height: 2.72rem;
@@ -158,6 +169,7 @@ html * .container {
 #footer .footerMain .footerMainContainer .contact button {
   display: flex;
   align-items: center;
+  font-family: "poppins";
   background-color: transparent;
   border: 0.1rem solid rgba(158, 158, 158, 0.662745098);
   border-radius: 0.8rem;
@@ -168,15 +180,6 @@ html * .container {
 #footer .footerMain .footerMainContainer .contact button img {
   margin-right: 0.8rem;
 }
-#footer .footerMain .footerMainContainer .shop {
-  grid-area: shop;
-}
-#footer .footerMain .footerMainContainer .company {
-  grid-area: company;
-}
-#footer .footerMain .footerMainContainer .help {
-  grid-area: help;
-}
 #footer .footerBottom {
   padding: 2.3rem;
   background-color: white;
@@ -185,18 +188,13 @@ html * .container {
   display: flex;
   justify-content: space-between;
 }
-#footer .footerBottom .footerBottomContainer .paragraph {
-  font-size: 1.6rem;
-  color: rgba(33, 33, 33, 0.7764705882);
-}
 #footer .footerBottom .footerBottomContainer .footerSocial img {
   padding-left: 3.2rem;
 }
 
 @media screen and (max-width: 992px) {
-  .footerMainContainer {
-    grid-template-columns: repeat(1, 2fr);
-    grid-template-areas: "contact" "shop" "company" "help";
+  .footerContainer .search {
+    top: 1.3rem;
   }
   .footerContainer, .footerBottomContainer {
     flex-direction: column;
@@ -204,8 +202,14 @@ html * .container {
     gap: 2.5rem;
   }
   .footerMainContainer {
-    grid-template-columns: repeat(1, 3fr);
-    grid-template-areas: "contact" "shop" "company" "help";
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerMainContainer .contact {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (min-width: 992px) and (max-width: 1400px) {
@@ -376,7 +380,7 @@ html * .container {
   justify-content: space-between;
   border: 1px solid #E4E4E4;
   margin-top: 11.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 7.2rem;
   padding: 3.2rem 3.7rem;
 }
 #shopBag .shopBagContainer .shopBagBottom .services {
@@ -393,4 +397,33 @@ html * .container {
   line-height: 2.72rem;
   color: rgba(33, 33, 33, 0.75);
   max-width: 16.6rem;
+}
+
+@media screen and (max-width: 992px) {
+  .shopBagMiddle {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .shopBagMiddle .leftCard {
+    width: 100%;
+    margin: auto;
+  }
+  .shopBagMiddle .middleRightSide {
+    width: 50%;
+  }
+  .shopBagBottom {
+    flex-direction: column;
+  }
+  .shopBagBottom .services {
+    border: 1px solid #E4E4E4;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .shopBagBottom .services h4, .shopBagBottom .services p {
+    margin: auto;
+  }
+  .shopBagBottom .line {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

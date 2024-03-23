@@ -22,17 +22,19 @@
       form {
         position: relative;
 
+
         input {
           width: 50.4rem;
           border: 0.1rem solid #9e9e9ea9;
           border-radius: 0.8rem;
           padding: 1.5rem 1.6rem;
+
         }
 
         .search {
           position: absolute;
           right: 1.2rem;
-          bottom: 20%;
+          bottom: 3.5rem;
         }
       }
 
@@ -48,16 +50,17 @@
       justify-content: space-between;
 
       .main {
-
-        h4 a {
-          color: #212121;
-          font-size: 1.8rem;
-          font-family: "rubik";
+        ul {
+          h4 a {
+            color: #212121;
+            font-size: 1.8rem;
+            font-family: "rubik";
+          }
+  
+          li {
+            margin-top: 2rem;
+          }
         }
-      }
-
-      li {
-        margin-top: 2rem;
       }
 
       .contact {
@@ -124,6 +127,12 @@
 
 @media screen and (max-width: 992px) {
 
+  .footerContainer {
+    .search {
+      top: 1.3rem;
+    }
+  }
+
   .footerContainer, .footerBottomContainer {
     flex-direction: column;
     align-items: center;
@@ -132,14 +141,15 @@
 
   .footerMainContainer {
     flex-direction: column;
-    text-align: center;  }
+    text-align: center; 
+
     .contact {
       margin: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1400px) {

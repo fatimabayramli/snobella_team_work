@@ -193,7 +193,7 @@
             justify-content: space-between;
             border: 1px solid #E4E4E4;
             margin-top: 11.4rem;
-            margin-bottom: 2rem;
+            margin-bottom: 7.2rem;
             padding: 3.2rem 3.7rem;
 
             .services {
@@ -216,3 +216,40 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .shopBagMiddle {
+      flex-direction: column;
+      gap: 2rem;
+
+      .leftCard {
+        width: 100%;
+        margin: auto;
+      }
+
+      .middleRightSide {
+        width: 50%;
+        // margin: auto;
+      }
+    }
+
+    .shopBagBottom {
+        flex-direction: column;
+
+        .services {
+            border: 1px solid #E4E4E4;
+            width: 100%;
+            margin: auto;
+            margin-top: 2rem;
+
+            h4,p {
+                margin: auto;
+            }
+        }
+
+        .line {
+            display: none;
+        }
+    }
+  
+  }
