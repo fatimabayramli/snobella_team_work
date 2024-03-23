@@ -1,0 +1,40 @@
+#hero {
+  background-color: #FFE2E0;
+  padding: 2.4rem 0 2.5rem 0;
+}
+#hero .heroContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .heroContainer .heroLeft {
+  max-width: 40rem;
+  max-height: 8rem;
+}
+#hero .heroContainer .heroLeft span {
+  color: #DF4244;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+}
+#hero .heroContainer .heroLeft h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 6.8rem;
+}
+#hero .heroContainer .heroLeft p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  height: 2.72rem;
+  color: rgba(33, 33, 33, 0.8196078431);
+}
+#hero .heroContainer .heroLeft button {
+  background-color: #206363;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 1.2rem 5.7rem;
+  margin: 4.8rem 0 12.8rem 0;
+}
+#hero .heroContainer .heroLeft .figure img {
+  margin: 0 1.7rem;
+}

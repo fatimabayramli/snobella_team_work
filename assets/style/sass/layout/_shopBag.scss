@@ -1,0 +1,255 @@
+#shopBag {
+     padding-top: 3.2rem;
+
+    .shopBagContainer {
+        .shopBagTop {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            p {
+                font-size: 1.4rem;
+                line-height: 2.38rem;
+                color: #1D1D1D;
+            }
+        }
+        .h2 {
+            font-size: 4rem;
+            line-height: 6.8rem;
+            margin: 0.6rem 0 4.8rem 0;
+            color: #212121;
+        }
+
+        .shopBagMiddle {
+            display: flex;
+
+            .middleLeftSide {
+            
+                .leftCards {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.4rem;
+
+                    .leftCard {
+                        display: flex;
+                        padding: 1.6rem 1.7rem;
+                        border: 1px solid #E4E4E4;
+                        border-radius: 0.8rem;
+                        width: 70rem;
+                        position: relative;
+
+                        .cardImage {
+                            background-color: #F9F9F9;
+                            padding: 2.3rem 1.4rem 1.9rem 1.3rem;
+                            border-radius: 0.8rem;
+                        }
+
+                        .cardMain {
+                            margin-left: 2.5rem;
+
+                            h5 {
+                                font-size: 1.6rem;
+                                line-height: 2.72rem;
+                                color: #212121;
+                                margin-bottom: 1.2rem;
+                            }
+                            p {
+                                font-size: 1.4rem;
+                                line-height: 2.38rem;
+                                color: #212121;
+                                opacity: 75%;
+                            }
+
+                            select {
+                                padding: 0.6rem 1.2rem 0.6rem 0.8rem;
+                                border: 1px solid #E4E4E4;
+                                border-radius: 0.3rem;
+                            }
+                        }
+
+                        .cardRightSide {
+                            h3 {
+                                font-size: 1.8rem;
+                                line-height: 3.06rem;
+                                color: #212121;
+                                position: absolute;
+                                right: 1.7rem;
+                            }
+                            .cardIcons {
+                                display: flex;
+                                gap: 4rem;
+
+                                .icon {
+                                    position: absolute;
+                                    bottom: 1.7rem;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.8rem;
+
+                                    p {
+                                        font-size: 1.4rem;
+                                        line-height: 2.38rem;
+                                        color: #212121;
+                                        opacity: 75%; 
+                                    }
+
+                                    .red {
+                                        color: #DF4244;
+                                    }
+                                }
+
+                                .like {
+                                    right: 14rem;
+                                }
+
+                                .remove {
+                                    right: 1.7rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .middleRightSide {
+                margin-left: 2.4rem;
+
+                .discount {
+                    background-color: #F9F9F9;
+                    border-radius: 0.8rem;
+                    padding: 3.2rem 2.4rem;
+
+                    .discountTop {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px dashed #E4E4E4;
+                        padding-bottom: 2.4rem;
+
+                        p {
+                                font-size: 1.6rem;
+                                line-height: 2.72rem;
+                                color: #212121;
+                                margin-bottom: 1.2rem;
+                        }
+
+                        h3 {
+                            font-size: 1.8rem;
+                            line-height: 3.06rem;
+                            margin-top: 0.8rem;
+                        }
+                    }
+
+                    .apply {
+                        margin-top: 2.2rem;
+                        background-color: transparent;
+                        border: 1px solid #DBDBDB;
+                        border-radius: 0.8rem;
+
+                        input {
+                            background-color: transparent;
+                           padding-left: 1.5rem;
+                        }
+
+                        button {
+                            background-color: #FF695E;
+                            border: 1px solid #FF695E;
+                            border-radius: 0 0.8rem 0.8rem 0;
+                            font-size: 1.6rem;
+                            padding: 1rem 2.8rem;
+                            color: white;
+                        }
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.6rem;
+                    margin-top: 2.3rem;
+
+                    button {
+                        border-radius: 0.8rem;
+                        padding: 1.3rem 0;
+                        border: 1px solid;
+                        font-size: 1.6rem;
+                    }
+
+                    .btnRed {
+                        background-color: #DF4244;
+                        border-color: #DF4244;
+                        color: white;
+                    }
+
+                    .btnGray {
+                        background-color: transparent;
+                        border-color: #212121;
+                        color: #212121;
+                    }
+                }
+            }
+        }
+
+        .shopBagBottom {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #E4E4E4;
+            margin-top: 11.4rem;
+            margin-bottom: 7.2rem;
+            padding: 3.2rem 3.7rem;
+
+            .services {
+                text-align: center;
+
+                h4 {
+                    font-size: 1.6rem;
+                    line-height: 2.72rem;
+                    color: #212121;
+                    max-width: 21rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    line-height: 2.72rem;
+                    color: rgba(33, 33, 33, 0.75);
+                    max-width: 16.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .shopBagMiddle {
+      flex-direction: column;
+      gap: 2rem;
+
+      .leftCard {
+        width: 100%;
+        margin: auto;
+      }
+
+      .middleRightSide {
+        width: 50%;
+        // margin: auto;
+      }
+    }
+
+    .shopBagBottom {
+        flex-direction: column;
+
+        .services {
+            border: 1px solid #E4E4E4;
+            width: 100%;
+            margin: auto;
+            margin-top: 2rem;
+
+            h4,p {
+                margin: auto;
+            }
+        }
+
+        .line {
+            display: none;
+        }
+    }
+  
+  }

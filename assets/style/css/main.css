@@ -1,0 +1,429 @@
+html {
+  font-size: 62.5%;
+}
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  vertical-align: baseline;
+}
+html * .container {
+  max-width: 112.8rem;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "palanquin";
+  src: url("../../../../assets/fonts/palanquin/Palanquin-SemiBold.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../../../../assets/fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "rubik";
+  src: url("../../../../assets/fonts/rubik/Rubik-SemiBold.ttf");
+}
+#hero {
+  background-color: #FFE2E0;
+  padding: 2.4rem 0 2.5rem 0;
+  width: 100%;
+}
+#hero .heroContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .heroContainer .heroLeft {
+  max-width: 45.3rem;
+}
+#hero .heroContainer .heroLeft span {
+  color: #DF4244;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+  font-family: "rubik";
+}
+#hero .heroContainer .heroLeft .h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 6.8rem;
+  font-family: "palanquin";
+}
+#hero .heroContainer .heroLeft p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.72rem;
+  color: rgba(33, 33, 33, 0.8196078431);
+  font-family: "poppins";
+}
+#hero .heroContainer .heroLeft button {
+  background-color: #206363;
+  color: white;
+  font-family: "poppins";
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  padding: 1.2rem 5.7rem;
+  margin: 4.8rem 0 12.8rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#hero .heroContainer .heroLeft button:hover {
+  background-color: transparent;
+  color: #206363;
+  font-weight: 700;
+  border: 0.1rem solid #206363;
+}
+#hero .heroContainer .heroLeft .ellipse {
+  margin: 0 1.7rem;
+}
+#hero .heroContainer .heroRight {
+  max-width: 64.2rem;
+}
+#hero .heroContainer .heroRight img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .heroContainer {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .heroContainer {
+    padding-left: 6%;
+  }
+}
+#footer {
+  background-color: #F7F7F9;
+}
+#footer p, #footer .main a {
+  font-size: 1.6rem;
+  color: rgba(33, 33, 33, 0.7764705882);
+  font-family: "poppins";
+}
+#footer .footerTop {
+  border-bottom: 0.1rem solid rgba(39, 49, 66, 0.095);
+  padding: 3.5rem 0 3.2rem 0;
+}
+#footer .footerTop .footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footerTop .footerContainer .h2 {
+  font-size: 4rem;
+  font-family: "palanquin";
+}
+#footer .footerTop .footerContainer form {
+  position: relative;
+}
+#footer .footerTop .footerContainer form input {
+  width: 50.4rem;
+  border: 0.1rem solid rgba(158, 158, 158, 0.662745098);
+  border-radius: 0.8rem;
+  padding: 1.5rem 1.6rem;
+}
+#footer .footerTop .footerContainer form .search {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 3.5rem;
+}
+#footer .footerMain {
+  background-color: #F7F7F9;
+  padding: 5.1rem;
+}
+#footer .footerMain .footerMainContainer {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footerMain .footerMainContainer .main ul h4 a {
+  color: #212121;
+  font-size: 1.8rem;
+  font-family: "rubik";
+}
+#footer .footerMain .footerMainContainer .main ul li {
+  margin-top: 2rem;
+}
+#footer .footerMain .footerMainContainer .contact {
+  max-width: 32.6rem;
+}
+#footer .footerMain .footerMainContainer .contact .paragraph {
+  line-height: 2.72rem;
+}
+#footer .footerMain .footerMainContainer .contact .email {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0 2.4rem 0;
+}
+#footer .footerMain .footerMainContainer .contact .phone {
+  display: flex;
+  align-items: center;
+}
+#footer .footerMain .footerMainContainer .contact input {
+  background-color: transparent;
+  margin-left: 1rem;
+}
+#footer .footerMain .footerMainContainer .contact button {
+  display: flex;
+  align-items: center;
+  font-family: "poppins";
+  background-color: transparent;
+  border: 0.1rem solid rgba(158, 158, 158, 0.662745098);
+  border-radius: 0.8rem;
+  padding: 1rem 1.6rem;
+  margin: 4.8rem 0 2.9rem 0;
+  cursor: pointer;
+}
+#footer .footerMain .footerMainContainer .contact button img {
+  margin-right: 0.8rem;
+}
+#footer .footerBottom {
+  padding: 2.3rem;
+  background-color: white;
+}
+#footer .footerBottom .footerBottomContainer {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footerBottom .footerBottomContainer .footerSocial img {
+  padding-left: 3.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .footerContainer .search {
+    top: 1.3rem;
+  }
+  .footerContainer, .footerBottomContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .footerMainContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerMainContainer .contact {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .footerContainer, .footerBottomContainer {
+    padding-left: 6%;
+  }
+}
+#shopBag {
+  padding-top: 3.2rem;
+}
+#shopBag .shopBagContainer .shopBagTop {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+#shopBag .shopBagContainer .shopBagTop p {
+  font-size: 1.4rem;
+  line-height: 2.38rem;
+  color: #1D1D1D;
+}
+#shopBag .shopBagContainer .h2 {
+  font-size: 4rem;
+  line-height: 6.8rem;
+  margin: 0.6rem 0 4.8rem 0;
+  color: #212121;
+}
+#shopBag .shopBagContainer .shopBagMiddle {
+  display: flex;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard {
+  display: flex;
+  padding: 1.6rem 1.7rem;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.8rem;
+  width: 70rem;
+  position: relative;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardImage {
+  background-color: #F9F9F9;
+  padding: 2.3rem 1.4rem 1.9rem 1.3rem;
+  border-radius: 0.8rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardMain {
+  margin-left: 2.5rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardMain h5 {
+  font-size: 1.6rem;
+  line-height: 2.72rem;
+  color: #212121;
+  margin-bottom: 1.2rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardMain p {
+  font-size: 1.4rem;
+  line-height: 2.38rem;
+  color: #212121;
+  opacity: 75%;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardMain select {
+  padding: 0.6rem 1.2rem 0.6rem 0.8rem;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide h3 {
+  font-size: 1.8rem;
+  line-height: 3.06rem;
+  color: #212121;
+  position: absolute;
+  right: 1.7rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons {
+  display: flex;
+  gap: 4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .icon {
+  position: absolute;
+  bottom: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .icon p {
+  font-size: 1.4rem;
+  line-height: 2.38rem;
+  color: #212121;
+  opacity: 75%;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .icon .red {
+  color: #DF4244;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .like {
+  right: 14rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleLeftSide .leftCards .leftCard .cardRightSide .cardIcons .remove {
+  right: 1.7rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide {
+  margin-left: 2.4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount {
+  background-color: #F9F9F9;
+  border-radius: 0.8rem;
+  padding: 3.2rem 2.4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .discountTop {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #E4E4E4;
+  padding-bottom: 2.4rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .discountTop p {
+  font-size: 1.6rem;
+  line-height: 2.72rem;
+  color: #212121;
+  margin-bottom: 1.2rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .discountTop h3 {
+  font-size: 1.8rem;
+  line-height: 3.06rem;
+  margin-top: 0.8rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .apply {
+  margin-top: 2.2rem;
+  background-color: transparent;
+  border: 1px solid #DBDBDB;
+  border-radius: 0.8rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .apply input {
+  background-color: transparent;
+  padding-left: 1.5rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .discount .apply button {
+  background-color: #FF695E;
+  border: 1px solid #FF695E;
+  border-radius: 0 0.8rem 0.8rem 0;
+  font-size: 1.6rem;
+  padding: 1rem 2.8rem;
+  color: white;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 2.3rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .buttons button {
+  border-radius: 0.8rem;
+  padding: 1.3rem 0;
+  border: 1px solid;
+  font-size: 1.6rem;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .buttons .btnRed {
+  background-color: #DF4244;
+  border-color: #DF4244;
+  color: white;
+}
+#shopBag .shopBagContainer .shopBagMiddle .middleRightSide .buttons .btnGray {
+  background-color: transparent;
+  border-color: #212121;
+  color: #212121;
+}
+#shopBag .shopBagContainer .shopBagBottom {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #E4E4E4;
+  margin-top: 11.4rem;
+  margin-bottom: 7.2rem;
+  padding: 3.2rem 3.7rem;
+}
+#shopBag .shopBagContainer .shopBagBottom .services {
+  text-align: center;
+}
+#shopBag .shopBagContainer .shopBagBottom .services h4 {
+  font-size: 1.6rem;
+  line-height: 2.72rem;
+  color: #212121;
+  max-width: 21rem;
+}
+#shopBag .shopBagContainer .shopBagBottom .services p {
+  font-size: 1.6rem;
+  line-height: 2.72rem;
+  color: rgba(33, 33, 33, 0.75);
+  max-width: 16.6rem;
+}
+
+@media screen and (max-width: 992px) {
+  .shopBagMiddle {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .shopBagMiddle .leftCard {
+    width: 100%;
+    margin: auto;
+  }
+  .shopBagMiddle .middleRightSide {
+    width: 50%;
+  }
+  .shopBagBottom {
+    flex-direction: column;
+  }
+  .shopBagBottom .services {
+    border: 1px solid #E4E4E4;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .shopBagBottom .services h4, .shopBagBottom .services p {
+    margin: auto;
+  }
+  .shopBagBottom .line {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

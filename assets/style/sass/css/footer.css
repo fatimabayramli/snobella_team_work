@@ -1,0 +1,11 @@
+#footer {
+  background-color: #F7F7F9;
+}
+#footer .footerTop input {
+  max-width: 50.4rem;
+  border: 1px solid gray;
+  padding: 2rem;
+}
+#footer .footerTop input img {
+  right: -5rem;
+}

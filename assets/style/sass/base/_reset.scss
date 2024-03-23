@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
     font-size: 62.5%;
 }
@@ -17,3 +18,26 @@ html{
     }
 }
 
+=======
+html {
+    font-size: 62.5%;
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        border: 0;
+        vertical-align: baseline;
+    
+        .container {
+            max-width: 112.8rem;
+            margin: auto;
+        }
+    }
+    
+}
+
+
+>>>>>>> husniya
