@@ -1,5 +1,11 @@
 #footer {
   background-color: #F7F7F9;
+
+  p, .main a {
+    font-size: 1.6rem;
+    color: #212121c6;
+    font-family: "poppins";
+  }
   .footerTop {
     border-bottom: 0.1rem solid rgba(39, 49, 66, 0.095);
     padding: 3.5rem 0 3.2rem 0;
@@ -10,7 +16,7 @@
 
       .h2 {
         font-size: 4rem;
-        // font-family: "palanquin";
+        font-family: "palanquin";
       }
 
       form {
@@ -38,19 +44,15 @@
     padding: 5.1rem;
 
     .footerMainContainer {
-      display: grid;
-      grid-template-columns: repeat(4, 2fr);
-      grid-template-areas: "contact shop company help";
-
+      display: flex;
+      justify-content: space-between;
 
       .main {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
 
         h4 a {
           color: #212121;
           font-size: 1.8rem;
+          font-family: "rubik";
         }
       }
 
@@ -58,13 +60,8 @@
         margin-top: 2rem;
       }
 
-      p, .main a {
-        font-size: 1.6rem;
-        color: #212121c6;
-      }
-
       .contact {
-        grid-area: contact;
+        max-width: 32.6rem;
 
         .paragraph {
           line-height: 2.72rem;
@@ -90,6 +87,7 @@
         button {
           display: flex;
           align-items: center;
+          font-family: "poppins";
           background-color: transparent;
           border: 0.1rem solid #9e9e9ea9;
           border-radius: 0.8rem;
@@ -102,18 +100,6 @@
           }
         }
       }
-
-      .shop {
-        grid-area: shop;
-      }
-
-      .company {
-        grid-area: company;
-      }
-
-      .help {
-        grid-area: help;
-      }
     }
   }
 
@@ -124,11 +110,7 @@
     .footerBottomContainer {
       display: flex;
       justify-content: space-between;
-  
-      .paragraph {
-        font-size: 1.6rem;
-        color: #212121c6;
-      }
+
   
       .footerSocial {
   
@@ -142,12 +124,6 @@
 
 @media screen and (max-width: 992px) {
 
-  .footerMainContainer {
-    grid-template-columns: repeat(1, 2fr);
-    grid-template-areas: "contact" "shop"
-    "company" "help";
-  }
-
   .footerContainer, .footerBottomContainer {
     flex-direction: column;
     align-items: center;
@@ -155,12 +131,14 @@
   }
 
   .footerMainContainer {
-    grid-template-columns: repeat(1, 3fr);
-    grid-template-areas: "contact"
-    "shop"
-    "company"
-    "help";
-  }
+    flex-direction: column;
+    text-align: center;  }
+    .contact {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
 }
 
