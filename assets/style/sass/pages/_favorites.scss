@@ -1,0 +1,69 @@
+hr{
+    border: 1px solid #27314226;
+}
+
+main{
+    padding: 3.2rem 0 12.8rem 0;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    
+        .link{
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            a{
+                font-family: "poppins", sans-serif;
+                font-size: 1.4rem;
+                color: #1D1D1DBF;
+            }
+            .bold{
+                color: #1D1D1D;
+
+            }
+        }
+        h2{
+            margin-top: 0.6rem;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+    }
+    .favorite{
+        margin-top: 3.2rem;
+        width: 100%;
+        display: flex;
+        gap: 9.7rem;
+        .posts{
+            gap: 4.7rem 4.8rem;
+            .post{
+                .close{
+                    position: absolute;
+                    top: 1.6rem;
+                    right: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    border-radius: 50%;
+                    background-color: #FFFFFF;
+                }
+
+            }
+        }
+    }
+   
+    }
+    @media screen and (max-width:992px){
+       main{
+        .favorite{
+            .posts{
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                
+            }
+        }
+    }
+}
+    
