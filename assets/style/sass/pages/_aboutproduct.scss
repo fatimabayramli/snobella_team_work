@@ -1,12 +1,26 @@
 main{
     padding: 2.4rem 0 7.2rem 0;
-    .container{
-        padding: 0 3rem;
+        .link{
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            a{
+                font-family: "poppins", sans-serif;
+                font-size: 1.4rem;
+                color: #1D1D1DBF;
+            }
+            .bold{
+                color: #1D1D1D;
+
+            }
+        }
+        
     
     .top{
         margin-top: 3.2rem;
         display: flex;
         gap: 6.4rem;
+        
         .left{
             display: flex;
             flex-direction: row;
@@ -50,6 +64,10 @@ main{
                
                
             }
+            .posts{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
             .post{
                 display: flex;
                 justify-content: center;
@@ -60,6 +78,8 @@ main{
                 height: 47.3rem;
                 background-color: #F9F9F9;
                 .disc{
+                    font-family: "poppins";
+                    font-weight: 500;
                     top: 2.4rem;
                     left: 2.4rem;
                     position: absolute;
@@ -79,13 +99,14 @@ main{
                     position: absolute;
                 }
             }
-        }
+        
+    }
         .right{
             display: flex;
             flex-direction: column;
             h2{
                 font-size: 2.4rem;
-                font-weight: 600;
+                font-weight: 500;
             }
             .review{
                 margin-top: 1.2rem;
@@ -96,10 +117,16 @@ main{
                     gap: 0.6rem;
                 }
                 .point{
-                    font-size: 1.4rem;
+                    
                     display: flex;
                     align-items: center;
                     gap: 0.9rem;
+                    p{
+                        font-size: 1.4rem;
+                        font-family: "poppins";
+                        font-weight: 400;
+
+                    }
                 }
             }
             .pieces{
@@ -114,11 +141,16 @@ main{
                     gap:2.4rem;
                     border: 1px solid #E4E4E4;
                     border-radius: 0.8rem;
-                    
                     height: 6rem;
                     font-size: 1.4rem;
                     color: #212121E5;
+                    p{
+                        font-family: "poppins";
+                        font-weight: 400;
+                    }
                     h4{
+                        font-family: "poppins";
+                        font-weight: 600;
                         color: #212121E5;
                         font-size: 1.8rem;
                     }
@@ -146,6 +178,8 @@ main{
                         display: flex;
                         gap: 1.4rem;
                         .size{
+                            font-family: "poppins";
+                            font-weight: 400;
                             font-size: 1.6rem;
                             display: flex;
                             align-items: center;
@@ -209,7 +243,8 @@ main{
                     height: 5.2rem;
                     border-radius: 0.8rem;
                     font-size: 1.6rem;
-                    font-weight: 500;
+                    font-family: "poppins";
+                    font-weight: 400;
                     border: 1px solid #212121;
                 }
                 .red{
@@ -219,6 +254,8 @@ main{
                 }
             }
             .whatsapp{
+                font-family: "poppins";
+                font-weight: 400;
                 color: #000000;
                 text-decoration: underline;
                 font-size: 1.4rem;
@@ -229,7 +266,7 @@ main{
             .line{
                 position: relative;
                 .red{
-                    left: 20.6%;
+                    left: 22%;
                     bottom: -1px;
                     position: absolute;
                     border: 2px solid #DF4244;
@@ -245,9 +282,13 @@ main{
                 gap: 4.8rem;
                 margin-bottom: 1.6rem;
                 a{
+                    font-family: "poppins";
+                    font-weight: 600;
                     font-size: 2rem;
                     color: #858585;
-
+                }
+                .review{
+                    color: #212121;
                 }
             }
             .comments{
@@ -274,11 +315,15 @@ main{
                         }
                     }
                     .date{
+                        font-family: "poppins";
+                        font-weight: 400;
                         margin: 1.8rem 0 2.4rem 0;
                         font-size: 1.4rem; 
                         color: #212121BF;
                     }
                     p{
+                        font-family: "poppins";
+                        font-weight: 400;
                         font-size: 1.4rem;
                         color: #212121BF;
                         line-height: 2.38rem;
@@ -295,6 +340,10 @@ main{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    margin-bottom: 3.2rem;
+                }
+                .posts{
+                    grid-template-columns: 1fr 1fr 1fr;
                 }
             }
             
@@ -304,17 +353,21 @@ main{
                 display: flex;
                 justify-content: space-between;
                 .inside{
-                    padding: 3.2rem 2.0rem;
+                    padding: 3.2rem 1.3rem;
                     text-align: center;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     h5{
+                        font-family: "poppins";
+                        font-weight: 500;
                         font-size: 1.6rem;
                         font-weight: 600;
                         padding: 1.2rem 0 1.6rem 0;
                     }
                     p{
+                        font-family: "poppins";
+                        font-weight: 500;
                         font-size: 1.6rem;
                         color: #212121BF;
                         line-height: 2.72rem;
@@ -333,7 +386,7 @@ main{
         }
 
     }
-}
+
 
 @media screen and (max-width: 992px) {
     main{
@@ -363,13 +416,21 @@ main{
                     }
                     
                 }
+              
                 
                 
+            }
+            .center{
+                .comments{
+                    justify-content: center;
+                    align-items: center;
+                }
             }
             .bottom{
                 .posts{
                     padding: 0 8rem;
                     grid-template-columns: 1fr;
+                    justify-content: center;
                     
                 }
                 .about{
