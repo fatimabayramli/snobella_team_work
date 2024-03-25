@@ -1066,17 +1066,25 @@ html {
   }
   .navbar {
     padding: 0 9.6rem;
+    background-color: #007878;
+    color: white;
   }
   .navbar .navbarContainer {
     display: none;
   }
   .navbar .navbarAfter {
     display: block;
+    position: relative;
   }
   .navbar .navbarAfter .navbar_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 0;
+    height: max-content;
+  }
+  .navbar .navbarAfter .navbar_top .hamburger .fa-bars {
+    cursor: pointer;
   }
 }
 @font-face {

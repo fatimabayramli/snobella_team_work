@@ -89,16 +89,26 @@
         display: none;
     }
     .navbar{
-        padding: 0 9.6rem; 
+        padding: 0 9.6rem;
+        background-color: #007878;
+        color: white; 
         .navbarContainer{
             display: none;
         }
         .navbarAfter{
             display: block;
+            position: relative;
             .navbar_top{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 0.5rem 0;
+                height: max-content;
+                .hamburger{
+                    .fa-bars{
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
