@@ -5,7 +5,7 @@
         line-height: 2.72rem;
         font-family: "rubik";
     }
-    a {
+    a,p {
         font-size: 1.4rem;
         color: #212121;
         line-height: 2.38rem;
@@ -46,6 +46,12 @@
         .bgColor {
             background-color: #F9FBFB;
             border-left: 2px solid #007878;
+        }
+
+        .locationColor {
+            a {
+                color: #007878;
+            }
         }
     }
 }

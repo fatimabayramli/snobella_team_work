@@ -126,7 +126,6 @@
 }
 
 @media screen and (max-width: 992px) {
-
   .footerContainer {
     .search {
       top: 1.3rem;
@@ -149,12 +148,25 @@
       flex-direction: column;
       align-items: center;
     }
-  }
+}
 }
 
 @media (min-width: 992px) and (max-width: 1400px) {
 
   .footerContainer, .footerBottomContainer {
     padding-left: 6%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #footer {
+    width: max-content;
+
+    .contact {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

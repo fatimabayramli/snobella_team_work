@@ -1,0 +1,132 @@
+#address {
+    padding: 3.2rem 0 8.2rem 0;
+    .addressContainer {
+        
+        .sides {
+            display: flex;
+            gap: 2.4rem;
+            .rightSide {
+
+               .column {
+                display: flex;
+                gap: 2.4rem;
+
+                p {
+                    font-size: 1.6rem;
+                    line-height: 2.72rem;
+                    font-family: "poppins";
+                    font-weight: 600;
+                    color: rgba(33, 33, 33, 0.75);
+                }
+                .card {
+                    width: 26.4rem;
+                    height: 30.9rem;
+                    border-radius: 0.8rem;
+                    margin-bottom: 3.2rem;
+                }
+
+                .different {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0.1rem dashed #007878;
+                    background-color: #F9F9F9;
+
+                    .center {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+
+                .same {
+                    border: 0.1rem solid #E4E4E4;
+                    .cardTop {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 1.2rem 2.4rem 0.9rem 2rem;
+
+                        p {
+                            color: #212121 !important;
+                        }
+                    }
+                    .line {
+                        border-top: 0.1rem solid #E4E4E4;
+                    }
+
+                    .cardMain {
+                        padding: 1.6rem 2rem;
+                        .bold {
+                            line-height: 2.38rem;
+                            font-weight: 600;
+                            margin-bottom: 1.6rem;
+                            color: #212121;
+                        }
+                        p {
+                            color: rgba(33, 33, 33, 0.75);
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        margin-bottom: 0.8rem;
+                        }
+
+                        .cardBottom {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 2.3rem;
+    
+                            .cardIcon {
+                                display: flex;
+                                align-items: center;
+                                border: 1px solid #E4E4E4;
+                                border-radius: 0.8rem;
+    
+                                img {
+                                    margin: 0.9rem 0.9rem 1.1rem 1.2rem;
+                                }
+    
+                                p {
+                                    margin: 0.6rem 1.1rem 0.6rem 0; 
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+                .borderGreen {
+                    border-color: #007878;
+                }
+               }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .addressContainer {
+        padding: 10%;
+        .sides, .column {
+            flex-direction: column;
+        }
+            .user {
+                margin: auto;
+            }
+            .card {
+                margin: auto;
+                width: 70%;
+            }
+    }
+}
+@media screen and (max-width: 500px) {
+    .user {
+        margin: auto;
+    }
+    .card {
+        margin: auto;
+    }
+}
+
+  

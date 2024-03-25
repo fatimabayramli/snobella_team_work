@@ -2,22 +2,6 @@
      padding-top: 3.2rem;
 
     .shopBagContainer {
-        .shopBagTop {
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-            p {
-                font-size: 1.4rem;
-                line-height: 2.38rem;
-                color: #1D1D1D;
-            }
-        }
-        .h2 {
-            font-size: 4rem;
-            line-height: 6.8rem;
-            margin: 0.6rem 0 4.8rem 0;
-            color: #212121;
-        }
 
         .shopBagMiddle {
             display: flex;
@@ -144,9 +128,13 @@
                         border: 1px solid #DBDBDB;
                         border-radius: 0.8rem;
 
+                       form {
+                        position: relative;
+
                         input {
                             background-color: transparent;
-                           padding-left: 1.5rem;
+                        padding-left: 1.5rem;
+                           
                         }
 
                         button {
@@ -156,7 +144,10 @@
                             font-size: 1.6rem;
                             padding: 1rem 2.8rem;
                             color: white;
+                            right: 0;
+                           
                         }
+                       }
                     }
                 }
 
@@ -197,6 +188,9 @@
             padding: 3.2rem 3.7rem;
 
             .services {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 text-align: center;
 
                 h4 {
@@ -211,6 +205,7 @@
                     line-height: 2.72rem;
                     color: rgba(33, 33, 33, 0.75);
                     max-width: 16.6rem;
+                    font-family: "poppins";
                 }
             }
         }
@@ -227,11 +222,19 @@
         margin: auto;
       }
 
-      .middleRightSide {
-        width: 50%;
-        // margin: auto;
+        .apply {
+
+            input {
+               padding: 1rem 2rem 1.5rem 1.5rem;
+
+            }
+            button {
+                 position: absolute;
+                            right: 0;
+                            top: 0;
+            }
+        }
       }
-    }
 
     .shopBagBottom {
         flex-direction: column;
@@ -241,10 +244,6 @@
             width: 100%;
             margin: auto;
             margin-top: 2rem;
-
-            h4,p {
-                margin: auto;
-            }
         }
 
         .line {
