@@ -2,7 +2,7 @@ hr{
     border: 1px solid #27314226;
 }
 
-main{
+#shoulder{
     padding: 3.2rem 0 12.8rem 0;
     .content{
         display: flex;
@@ -242,15 +242,23 @@ main{
       
 
     @media screen and (max-width: 992px) {
-        main{
+        #shoulder{
             .container{
                 padding: 0 10rem;
+                .content{
+                    align-items: center;
+                }
+                .result{
+                    justify-content: center;
+                }
                 .main{
                     flex-direction: column;
                     .left{
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
                         align-items: center;
+                        justify-content: center;
                  }
                  .posts{
                     grid-template-columns: 1fr;

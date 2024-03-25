@@ -62,6 +62,9 @@ hr{
     }
     @media screen and (max-width:992px){
        #favorite{
+        .content{
+            align-items: center;
+        }
         .favorite{
             display: flex;
             flex-direction: column;
