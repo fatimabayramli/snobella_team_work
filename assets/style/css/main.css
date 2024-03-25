@@ -231,6 +231,7 @@ html {
   #Featured .top {
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
     padding: 8rem;
     padding-bottom: 0;
   }
@@ -497,44 +498,44 @@ hr {
   border: 1px solid rgba(39, 49, 66, 0.1490196078);
 }
 
-main {
-  padding: 3.2rem 0 12.8rem 0;
+#favorite {
+  padding: 3.2rem 0 11.4rem 0;
 }
-main .content {
+#favorite .content {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
-main .content .link {
+#favorite .content .link {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
-main .content .link a {
+#favorite .content .link a {
   font-family: "poppins", sans-serif;
   font-size: 1.4rem;
   color: rgba(29, 29, 29, 0.7490196078);
 }
-main .content .link .bold {
+#favorite .content .link .bold {
   color: #1D1D1D;
 }
-main .content h2 {
+#favorite .content h2 {
   margin-top: 0.6rem;
   font-size: 4rem;
   font-weight: 600;
 }
-main .favorite {
+#favorite .favorite {
   margin-top: 3.2rem;
   width: 100%;
   display: flex;
   gap: 9.7rem;
 }
-main .favorite .posts {
+#favorite .favorite .posts {
   margin-top: 0;
   gap: 4.7rem 4.8rem;
   grid-template-columns: 1fr 1fr;
 }
-main .favorite .posts .post .close {
+#favorite .favorite .posts .post .close {
   position: absolute;
   top: 1.6rem;
   right: 1.6rem;
@@ -548,12 +549,12 @@ main .favorite .posts .post .close {
 }
 
 @media screen and (max-width: 992px) {
-  main .favorite {
+  #favorite .favorite {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  main .favorite .posts {
+  #favorite .favorite .posts {
     justify-content: center;
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -925,6 +926,7 @@ main .bottom .about .line {
     align-items: center;
   }
   main .container .top .left {
+    width: 80%;
     flex-direction: column-reverse;
     align-items: center;
     gap: 1rem;
@@ -942,10 +944,10 @@ main .bottom .about .line {
     max-width: 60rem;
   }
   main .container .top .right {
+    width: 100%;
     align-items: center;
   }
   main .container .top .right .pieces {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -954,8 +956,16 @@ main .bottom .about .line {
     font-size: 1.2rem;
   }
   main .container .top .right .categories {
+    gap: 3rem;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  main .container .top .right .buttons {
+    width: 80%;
+    justify-content: center;
+  }
+  main .container .top .right .buttons button {
+    min-width: 20rem;
   }
   main .container .center .comments {
     justify-content: center;

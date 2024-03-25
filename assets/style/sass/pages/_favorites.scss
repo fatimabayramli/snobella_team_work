@@ -2,8 +2,9 @@ hr{
     border: 1px solid #27314226;
 }
 
-main{
-    padding: 3.2rem 0 12.8rem 0;
+#favorite{
+    padding: 3.2rem 0 11.4rem 0;
+    
     .content{
         display: flex;
         flex-direction: column;
@@ -60,7 +61,7 @@ main{
    
     }
     @media screen and (max-width:992px){
-       main{
+       #favorite{
         .favorite{
             display: flex;
             flex-direction: column;
