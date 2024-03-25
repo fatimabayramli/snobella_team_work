@@ -2,14 +2,16 @@
      padding-top: 3.2rem;
 
     .shopBagContainer {
-        padding: 2rem;
+   
 
         .shopBagMiddle {
+            width: 100%;
             display: flex;
 
-            .middleLeftSide {
+  
             
                 .leftCards {
+                    width: 67%;
                     display: flex;
                     flex-direction: column;
                     gap: 2.4rem;
@@ -19,7 +21,6 @@
                         padding: 1.6rem 1.7rem;
                         border: 1px solid #E4E4E4;
                         border-radius: 0.8rem;
-                        width: 70rem;
                         position: relative;
 
                         .cardImage {
@@ -38,6 +39,7 @@
                                 margin-bottom: 1.2rem;
                             }
                             p {
+                                font-family: "poppins";
                                 font-size: 1.4rem;
                                 line-height: 2.38rem;
                                 color: #212121;
@@ -45,6 +47,7 @@
                             }
 
                             select {
+                                font-family: "poppins";
                                 padding: 0.6rem 1.2rem 0.6rem 0.8rem;
                                 border: 1px solid #E4E4E4;
                                 border-radius: 0.3rem;
@@ -93,9 +96,10 @@
                         }
                     }
                 }
-            }
+            
 
             .middleRightSide {
+                width: 33%;
                 margin-left: 2.4rem;
 
                 .discount {
@@ -110,6 +114,7 @@
                         padding-bottom: 2.4rem;
 
                         p {
+                                font-family: "poppins";
                                 font-size: 1.6rem;
                                 line-height: 2.72rem;
                                 color: #212121;
@@ -117,6 +122,7 @@
                         }
 
                         h3 {
+                            font-family: "poppins";
                             font-size: 1.8rem;
                             line-height: 3.06rem;
                             margin-top: 0.8rem;
@@ -133,12 +139,16 @@
                         position: relative;
 
                         input {
+                            font-family: "poppins";
                             background-color: transparent;
                         padding-left: 1.5rem;
+                        height: 4.6rem;
                            
                         }
 
                         button {
+                            font-family: "poppins";
+                            position: absolute;
                             background-color: #FF695E;
                             border: 1px solid #FF695E;
                             border-radius: 0 0.8rem 0.8rem 0;
@@ -153,12 +163,14 @@
                 }
 
                 .buttons {
+                    
                     display: flex;
                     flex-direction: column;
                     gap: 1.6rem;
                     margin-top: 2.3rem;
 
                     button {
+                        font-family: "poppins";
                         border-radius: 0.8rem;
                         padding: 1.3rem 0;
                         border: 1px solid;
@@ -166,6 +178,7 @@
                     }
 
                     .btnRed {
+                       
                         background-color: #DF4244;
                         border-color: #DF4244;
                         color: white;
@@ -195,6 +208,7 @@
                 text-align: center;
 
                 h4 {
+                    font-family: "poppins";
                     font-size: 1.6rem;
                     line-height: 2.72rem;
                     color: #212121;
@@ -202,6 +216,7 @@
                 }
 
                 p {
+                    font-family: "poppins";
                     font-size: 1.6rem;
                     line-height: 2.72rem;
                     color: rgba(33, 33, 33, 0.75);
@@ -214,15 +229,24 @@
 }
 
 @media screen and (max-width: 992px) {
+    #shopBag{
+   .shopBagContainer{
     .shopBagMiddle {
       flex-direction: column;
+      align-items: center;
       gap: 2rem;
-
-      .leftCard {
+      .leftCards{
         width: 100%;
-        margin: auto;
-      }
+        .leftCard {
+            width: 100%;
+            margin: auto;
+          }
+    
 
+      }
+     .middleRightSide{
+        width: 85%;
+    
         .apply {
 
             input {
@@ -235,6 +259,7 @@
                             top: 0;
             }
         }
+    }
       }
 
     .shopBagBottom {
@@ -250,6 +275,8 @@
         .line {
             display: none;
         }
+    }
+}
     }
   
   }
