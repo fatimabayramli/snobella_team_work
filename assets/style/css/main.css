@@ -493,6 +493,72 @@ main .main .posts .post {
     justify-content: center;
   }
 }
+hr {
+  border: 1px solid rgba(39, 49, 66, 0.1490196078);
+}
+
+main {
+  padding: 3.2rem 0 12.8rem 0;
+}
+main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main .content .link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+main .content .link a {
+  font-family: "poppins", sans-serif;
+  font-size: 1.4rem;
+  color: rgba(29, 29, 29, 0.7490196078);
+}
+main .content .link .bold {
+  color: #1D1D1D;
+}
+main .content h2 {
+  margin-top: 0.6rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+main .favorite {
+  margin-top: 3.2rem;
+  width: 100%;
+  display: flex;
+  gap: 9.7rem;
+}
+main .favorite .posts {
+  margin-top: 0;
+  gap: 4.7rem 4.8rem;
+  grid-template-columns: 1fr 1fr;
+}
+main .favorite .posts .post .close {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 992px) {
+  main .favorite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .favorite .posts {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
 main {
   padding: 2.4rem 0 7.2rem 0;
 }
@@ -510,11 +576,13 @@ main .link .bold {
   color: #1D1D1D;
 }
 main .top {
+  width: 100%;
   margin-top: 3.2rem;
   display: flex;
   gap: 6.4rem;
 }
 main .top .left {
+  width: 50%;
   display: flex;
   flex-direction: row;
   gap: 2.4rem;
@@ -585,6 +653,7 @@ main .top .left .post .like {
   position: absolute;
 }
 main .top .right {
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -618,6 +687,7 @@ main .top .right .pieces {
   gap: 1.6rem 2.4rem;
 }
 main .top .right .pieces .piece {
+  width: 22.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -706,14 +776,15 @@ main .top .right .categories .category .circle .color:nth-child(4) {
   background-color: #ED0875;
 }
 main .top .buttons {
+  width: 100%;
   margin-top: 4rem;
   margin-bottom: 1.6rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
 }
 main .top .buttons button {
   background-color: #FFFFFF;
-  width: 24.4rem;
   height: 5.2rem;
   border-radius: 0.8rem;
   font-size: 1.6rem;
@@ -868,7 +939,23 @@ main .bottom .about .line {
     flex-direction: row;
   }
   main .container .top .left .post {
-    width: 60rem;
+    max-width: 60rem;
+  }
+  main .container .top .right {
+    align-items: center;
+  }
+  main .container .top .right .pieces {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .container .top .right .pieces .piece {
+    max-width: 20rem;
+    font-size: 1.2rem;
+  }
+  main .container .top .right .categories {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   main .container .center .comments {
     justify-content: center;
@@ -887,72 +974,6 @@ main .bottom .about .line {
     height: 0;
     width: 70%;
     align-self: center;
-  }
-}
-hr {
-  border: 1px solid rgba(39, 49, 66, 0.1490196078);
-}
-
-main {
-  padding: 3.2rem 0 12.8rem 0;
-}
-main .content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-main .content .link {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-main .content .link a {
-  font-family: "poppins", sans-serif;
-  font-size: 1.4rem;
-  color: rgba(29, 29, 29, 0.7490196078);
-}
-main .content .link .bold {
-  color: #1D1D1D;
-}
-main .content h2 {
-  margin-top: 0.6rem;
-  font-size: 4rem;
-  font-weight: 600;
-}
-main .favorite {
-  margin-top: 3.2rem;
-  width: 100%;
-  display: flex;
-  gap: 9.7rem;
-}
-main .favorite .posts {
-  margin-top: 0;
-  gap: 4.7rem 4.8rem;
-  grid-template-columns: 1fr 1fr;
-}
-main .favorite .posts .post .close {
-  position: absolute;
-  top: 1.6rem;
-  right: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.2rem;
-  height: 3.2rem;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-}
-
-@media screen and (max-width: 992px) {
-  main .favorite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  main .favorite .posts {
-    justify-content: center;
-    grid-template-columns: 1fr;
-    gap: 3rem;
   }
 }
 html {
@@ -1009,9 +1030,6 @@ html {
   height: 2.4rem;
 }
 
-.navbar {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.623);
-}
 .navbar .navbarContainer {
   display: flex;
   justify-content: space-between;
