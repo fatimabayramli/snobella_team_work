@@ -34,7 +34,7 @@
         .search {
           position: absolute;
           right: 1.2rem;
-          bottom: 3.5rem;
+          top: 1.5rem;
         }
       }
 
@@ -149,24 +149,4 @@
       align-items: center;
     }
 }
-}
-
-@media (min-width: 992px) and (max-width: 1400px) {
-
-  .footerContainer, .footerBottomContainer {
-    padding-left: 6%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #footer {
-    width: max-content;
-
-    .contact {
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
 }
