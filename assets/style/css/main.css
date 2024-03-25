@@ -1056,7 +1056,19 @@ html {
   display: flex;
   gap: 5.4rem;
 }
+.navbar .navbarAfter {
+  display: none;
+}
 
+@media (max-width: 992px) {
+  .topbar {
+    display: none;
+  }
+  .navbar {
+    padding: 0 9.6rem;
+    margin: 0 2rem;
+  }
+}
 @font-face {
   font-family: "palanquin";
   src: url("../../../../assets/fonts/palanquin/Palanquin-SemiBold.ttf");
