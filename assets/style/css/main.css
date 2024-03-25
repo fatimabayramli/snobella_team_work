@@ -1284,6 +1284,9 @@ html {
 #shopBag {
   padding-top: 3.2rem;
 }
+#shopBag .shopBagContainer {
+  padding: 2rem;
+}
 #shopBag .shopBagContainer .shopBagMiddle {
   display: flex;
 }
