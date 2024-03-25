@@ -994,6 +994,7 @@ html {
   gap: 1.2rem;
 }
 .topbar .topbarContainer .phone p {
+  font-size: 1.4rem;
   color: whitesmoke;
 }
 .topbar .topbarContainer .help ul {
@@ -1002,6 +1003,7 @@ html {
   color: whitesmoke;
 }
 .topbar .topbarContainer .help ul a {
+  font-size: 1.4rem;
   color: whitesmoke;
 }
 .topbar .topbarContainer .help ul img {
@@ -1009,22 +1011,21 @@ html {
   height: 2.4rem;
 }
 
-.navbar {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.623);
-}
 .navbar .navbarContainer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
   padding: 1.5rem 0;
-  gap: 2rem;
+  gap: 3.5rem;
 }
 .navbar .navbarContainer .navbar_top {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  gap: 10rem;
+}
+.navbar .navbarContainer .navbar_top .snobella h1 {
+  font-size: 4rem;
 }
 .navbar .navbarContainer .navbar_top .search {
   display: flex;
@@ -1037,12 +1038,16 @@ html {
 }
 .navbar .navbarContainer .navbar_top .personal {
   display: flex;
-  gap: 2.6rem;
+  gap: 2rem;
+  justify-content: center;
 }
 .navbar .navbarContainer .navbar_top .personal .sign {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.3rem;
+}
+.navbar .navbarContainer .navbar_top .personal .sign a {
+  font-size: 1.4rem;
 }
 .navbar .navbarContainer .navbar_bottom {
   display: flex;
@@ -1052,6 +1057,9 @@ html {
 .navbar .navbarContainer .navbar_bottom ul {
   display: flex;
   gap: 5.4rem;
+}
+.navbar .navbarContainer .navbar_bottom ul li {
+  font-size: 1.6rem;
 }
 .navbar .navbarAfter {
   display: none;
@@ -1074,10 +1082,11 @@ html {
     position: relative;
   }
   .navbar .navbarAfter .navbar_top {
+    font-size: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 2rem 0;
     height: max-content;
   }
   .navbar .navbarAfter .navbar_top .hamburger .fa-bars {
@@ -1675,5 +1684,40 @@ html {
   }
   .card {
     margin: auto;
+  }
+}
+#delivery {
+  background-color: #F7F7F7;
+}
+#delivery .deliveryContainer {
+  width: 100%;
+  height: 14rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#delivery .deliveryContainer .fordelivery {
+  display: flex;
+  gap: 5.5rem;
+}
+#delivery .deliveryContainer .shopping {
+  display: flex;
+  gap: 5.5rem;
+}
+#delivery .deliveryContainer .pay {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+#delivery .deliveryContainer .pay p {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 992px) {
+  .deliveryContainer {
+    flex-wrap: wrap;
+    padding: 0 20rem;
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
