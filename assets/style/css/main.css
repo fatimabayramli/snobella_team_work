@@ -1066,7 +1066,17 @@ html {
   }
   .navbar {
     padding: 0 9.6rem;
-    margin: 0 2rem;
+  }
+  .navbar .navbarContainer {
+    display: none;
+  }
+  .navbar .navbarAfter {
+    display: block;
+  }
+  .navbar .navbarAfter .navbar_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @font-face {
