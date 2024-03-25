@@ -1,0 +1,75 @@
+#orders{
+.ordersContainer {
+    padding: 3.2rem 0;
+    .sides {
+        display: flex;
+        gap: 2.4rem;
+        .right {
+            table {
+                box-sizing: inherit;
+                border: 1px solid #E4E4E4;
+                border-radius: 0.8rem;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 2.38rem;
+                margin-bottom: 8.2rem;
+                border-collapse: collapse;
+
+                
+                td {
+                    padding: 1rem 3.2rem;
+                    border-bottom: 1px solid #E4E4E4;
+
+                }
+
+                .bgColor {
+                    background-color: #F9FBFB;
+                }
+
+                .pending {
+                    color: #FFC80A;
+                }
+                .delivered {
+                    color: #007878;
+                }
+                .canceled {
+                    color: #DF4244;
+                }
+
+                .border {
+                    border: 0;
+                }
+            }
+        }
+    }
+ }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 992px) {
+
+    .user {
+        margin: auto;
+    }
+    
+   .sides {
+    flex-direction: column;
+
+    table {
+        margin: auto;
+    }
+   }
+
+}
