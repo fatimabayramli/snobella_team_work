@@ -1,0 +1,32 @@
+#delivery {
+    background-color: #F7F7F7;
+    .deliveryContainer {
+        display: flex;
+        align-items: center;
+        gap: 4.5rem;
+        padding: 4.8rem 0;
+    
+            .services {
+                display: flex;
+                gap: 4.7rem;
+                margin: auto;
+                .pay {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+    
+                    p {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        line-height: 2.72rem;
+                    }
+                }
+            }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .services {
+        flex-direction: column;
+    }
+}

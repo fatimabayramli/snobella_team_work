@@ -1605,19 +1605,18 @@ html {
   color: #007878;
 }
 
-.top {
+.content .top {
   display: flex;
   align-items: center;
   gap: 0.7rem;
 }
-.top p {
+.content .top p {
   font-size: 1.4rem;
   line-height: 2.38rem;
   color: #1D1D1D;
   font-family: "poppins";
 }
-
-.h2 {
+.content .h2 {
   font-size: 4rem;
   line-height: 6.8rem;
   margin: 0.6rem 0 4.8rem 0;
@@ -1625,6 +1624,11 @@ html {
   font-family: "rubik";
 }
 
+@media screen and (max-width: 992px) {
+  .content {
+    margin-left: 6%;
+  }
+}
 #orders .ordersContainer {
   padding: 3.2rem 0;
 }
@@ -1671,6 +1675,7 @@ html {
   }
   .sides table {
     margin: auto;
+    width: 80%;
   }
 }
 #address {
@@ -1781,5 +1786,35 @@ html {
   }
   .card {
     margin: auto;
+  }
+}
+#delivery {
+  background-color: #F7F7F7;
+}
+#delivery .deliveryContainer {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  padding: 4.8rem 0;
+}
+#delivery .deliveryContainer .services {
+  display: flex;
+  gap: 4.7rem;
+  margin: auto;
+}
+#delivery .deliveryContainer .services .pay {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+#delivery .deliveryContainer .services .pay p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.72rem;
+}
+
+@media screen and (max-width: 992px) {
+  .services {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
